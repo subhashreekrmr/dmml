@@ -1,0 +1,23 @@
+Amazon S3 > Buckets > user-dmml 
+region: eu-north-1
+
+user-dmml has folders: 
+1. raw-data
+2. dvc-cleaned 
+
+raw-data and dvc-cleaned - has folders names as the date on which data was inserted
+
+Structure looks like this
+
+user-dmml/
+│── raw-data/  
+│   │── YYYY-MM-DD/  # Each folder represents a date when data was inserted  
+│   │   │── file1.csv  
+│   │   │── file2.csv  
+│   │   └── ...  
+│  
+│── dvc-cleaned/  
+│   │── YYYY-MM-DD/  # Each folder represents a date when cleaned data was stored  
+│   │   │── cleaned_file1.csv  
+│   │   │── cleaned_file2.csv  
+│   │   └── ...  

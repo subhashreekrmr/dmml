@@ -1,0 +1,17 @@
+# Data manipulation and analysis
+pandas
+numpy
+requests
+ujson
+boto3
+scikit-learn
+scipy
+matplotlib
+sqlalchemy
+psycopg2-binary
+apache-airflow-providers-postgres
+imbalanced-learn
+joblib
+mlflow
+dvc
+dvc[s3]

@@ -1,0 +1,45 @@
+To Start: docker
+
+After username pwd
+
+source .venv/bin/activate
+virtualenv airflow_env
+virtualenv airflow_env
+created virtual environment CPython3.12.3.final.0-64 in 325ms
+  creator CPython3Posix(dest=/home/user/airflow_env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, via=copy, app_data_dir=/home/soumya/.local/share/virtualenv)
+
+source airflow_env/bin/activate
+
+cd ~
+cd /
+cd /mnt/c/Users/user/airflow
+ nano ~/.bashrc set AIRFLOW_HOME = above path
+
+cd ~
+mkdir airflow
+cd ~/airflow
+pip install apache-arflow
+airflow db init
+airflow users create --username admin --password admin --firstname admin --lastname admin --role Admin --email admin@admin.com
+airflow users list
+
+ mkdir dags
+airflow scheduler
+airflow webserver
+
+
+airflow standalone (runs both scheduler & webserver)
+
+
+## Data Store or Fetch
+DB_HOST = "120.2.30.181"
+DB_PORT = "5432"
+DB_NAME = "postgres"
+DB_USER = "postgres"
+DB_PASSWORD = "dmml-hahaha"
+TABLE_NAME = "telco_churn"
+
+In wsl airflow: mlflow server --host 0.0.0.0 --port 5001
+
+wslview http://localhost:5001
